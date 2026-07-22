@@ -1,20 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perxona Widget Demo</title>
-    <script
-  type="module"
-  src="https://cdn.perxona.ai/asia/prod/latest/widget/entry/index.js"
-></script>
-  </head>
-  <body>
-    <sv-agent
-  agentProfileId="01KY4JSKFX6DKA7J437G0K3GDE"
-  presentationMode="embedded"
-  apiKey="e214316a-06aa-4491-ac36-a576eb3cd0ef"
->
-</sv-agent>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuro-sensei — Japanese Interview Coach</title>
+<script type="module" src="https://cdn.perxona.ai/asia/prod/latest/widget/entry/index.js"></script>
+<style>
+  html, body { margin:0; padding:0; height:100%; font-family: system-ui, sans-serif; background:#111; color:#eee; }
+  header { padding:28px 24px 12px; text-align:center; }
+  h1 { margin:0 0 8px; font-size:26px; }
+  header p { margin:0; color:#aaa; font-size:15px; }
+  main { max-width:900px; margin:0 auto; padding:16px 24px 32px; }
+  sv-agent {
+    display:block !important;
+    width:100% !important;
+    height:640px !important;
+    min-height:640px !important;
+    background:#000;
+    border-radius:12px;
+    overflow:hidden;
+  }
+  footer { text-align:center; padding:20px; color:#666; font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>クロ先生 — Kuro-sensei</h1>
+  <p>A strict AI Japanese teacher who trains foreigners for part-time job interviews in Japan.</p>
+</header>
+<main>
+  <sv-agent
+    agentProfileId="01KY4JSKFX6DKA7J437G0K3GDE"
+    presentationMode="embedded"
+    apiKey="e214316a-06aa-4491-ac36-a576eb3cd0ef">
+  </sv-agent>
+</main>
+<footer>Built at the Perxona AI Avatar Workshop, Tokyo — July 2026</footer>
+</body>
 </html>
